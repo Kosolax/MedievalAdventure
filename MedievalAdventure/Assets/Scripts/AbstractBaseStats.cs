@@ -6,21 +6,39 @@ using UnityEngine;
 
 public abstract class AbstractBaseStats : MonoBehaviour
 {
-    protected int ActionPoints;
+    private Stats actionPoints;
 
-    protected int CriticalRate;
+    private Stats criticalRates;
 
-    protected int LifePoint;
+    private Stats healPoStatss;
 
-    protected int MagicalDamage;
+    private Stats magicalDamages;
 
-    protected int MagicalPenetration;
+    private Stats magicalPenetrations;
 
-    protected int MagicalResist;
+    private Stats magicalResistances;
 
-    protected int PhysicalDamage;
+    private Stats physicalDamages;
 
-    protected int PhysicalPenetration;
+    private Stats physicalPenetrations;
 
-    protected int PhysicalResist;
+    private Stats physicalResistances;
+
+    public Stats ActionPoints { get => actionPoints; set => actionPoints = value; }
+
+    public Stats CriticalRates { get => criticalRates; set => criticalRates = value; }
+
+    public Stats HealPoStatss { get => healPoStatss; set => healPoStatss = value; }
+
+    public Stats MagicalDamages { get => magicalDamages; set => magicalDamages = value; }
+
+    public Stats MagicalPenetrations { get => magicalPenetrations; set => magicalPenetrations = value; }
+
+    public Stats MagicalResistances { get => magicalResistances; set => magicalResistances = value; }
+
+    public Stats PhysicalDamages { get => physicalDamages; set => physicalDamages = value; }
+
+    public Stats PhysicalPenetrations { get => physicalPenetrations; set => physicalPenetrations = value; }
+
+    public Stats PhysicalResistances { get => physicalResistances; set => physicalResistances = value; }
 }
