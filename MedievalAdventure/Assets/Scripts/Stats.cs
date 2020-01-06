@@ -6,19 +6,19 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    private string name;
-
-    private int values;
-
     private string description;
 
     private Sprite icone;
 
-    public string Name { get => name; set => name = value; }
+    private string title;
 
-    public int Values { get => values; set => values = value; }
+    private int value;
 
-    public string Description { get => description; set => description = value; }
+    public string Description { get => this.description; set => this.description = value; }
 
-    public Sprite Icone { get => icone; set => icone = value; }
+    public Sprite Icone { get => this.icone; set => this.icone = value; }
+
+    public string Title { get => this.title; set => this.title = value; }
+
+    public int Value { get => this.value; set => this.value = value; }
 }
