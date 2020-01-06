@@ -24,6 +24,8 @@ public abstract class AbstractBaseStats : MonoBehaviour
 
     private Stats physicalResistances;
 
+    private Stats speed;
+
     public Stats ActionPoints { get => actionPoints; set => actionPoints = value; }
 
     public Stats CriticalRates { get => criticalRates; set => criticalRates = value; }
@@ -41,4 +43,6 @@ public abstract class AbstractBaseStats : MonoBehaviour
     public Stats PhysicalPenetrations { get => physicalPenetrations; set => physicalPenetrations = value; }
 
     public Stats PhysicalResistances { get => physicalResistances; set => physicalResistances = value; }
+
+    public Stats Speed { get => speed; set => speed = value; }
 }
