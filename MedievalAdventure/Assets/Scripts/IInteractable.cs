@@ -5,5 +5,6 @@
 
 public interface IInteractable
 {
+    //Permetre l'interaction des elements
     void Interacts();
 }
