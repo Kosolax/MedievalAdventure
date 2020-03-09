@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: DoubleAxe
+  m_EditorClassIdentifier: Assembly-CSharp::EquippableItem
+  ItemName: Double Axe
+  Icon: {fileID: 21300000, guid: a1c14a5836942f843b706bd42bac94c9, type: 3}
+  ActionPointBonus: 5
+  CriticalRateBonus: 10
+  HealthPointBonus: 15
+  MagicalDamageBonus: 20
+  MagicalPenetrationBonus: 25
+  MagicalResistanceBonus: 30
+  PhysicalDamageBonus: 35
+  PhysicalPenetrationBonus: 40
+  PhysicalResistanceBonus: 45
+  SpeedBonus: 50
+  ActionPointPercentBonus: 0
+  CriticalRatePercentBonus: 0
+  HealthPointPercentBonus: 0
+  MagicalDamagePercentBonus: 0
+  MagicalPenetrationPercentBonus: 0
+  MagicalResistancePercentBonus: 0
+  PhysicalDamagePercentBonus: 0
+  PhysicalPenetrationPercentBonus: 0
+  PhysicalResistancePercentBonus: 0
+  SpeedPercentBonus: 0
+  EquipmentType: 5

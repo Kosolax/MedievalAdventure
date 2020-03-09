@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Bow
+  m_EditorClassIdentifier: Assembly-CSharp::EquippableItem
+  ItemName: Arc
+  Icon: {fileID: 21300000, guid: 809231dab9f3d9449a31a59ffe227691, type: 3}
+  ActionPointBonus: 10
+  CriticalRateBonus: 20
+  HealthPointBonus: 30
+  MagicalDamageBonus: 40
+  MagicalPenetrationBonus: 50
+  MagicalResistanceBonus: 60
+  PhysicalDamageBonus: 70
+  PhysicalPenetrationBonus: 80
+  PhysicalResistanceBonus: 90
+  SpeedBonus: 100
+  ActionPointPercentBonus: 0
+  CriticalRatePercentBonus: 0
+  HealthPointPercentBonus: 0
+  MagicalDamagePercentBonus: 0
+  MagicalPenetrationPercentBonus: 0
+  MagicalResistancePercentBonus: 0
+  PhysicalDamagePercentBonus: 0
+  PhysicalPenetrationPercentBonus: 0
+  PhysicalResistancePercentBonus: 0
+  SpeedPercentBonus: 0
+  EquipmentType: 0
