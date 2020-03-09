@@ -595,7 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - item: {fileID: 902446056386327117, guid: 12e9f44fca58f5341b87c8e4cf5a24e9, type: 3}
-    taux: 100
+    taux: 37
     rarete: 1
   - item: {fileID: 7468712775326760368, guid: a86fc54c1229ac04ea842bbcc69a66cc, type: 3}
     taux: 20
