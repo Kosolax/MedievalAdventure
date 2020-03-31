@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{D9FD03DA-6152-8637-9442-6A6DA9B9E66A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuSettings.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MenuSettings.cs" Line="56" Column="5" />
+      <File FileName="Assets/Scripts/SelectCharacter.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MedievalAdventure" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MenuSettings.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ddde39fd-2eec-40e9-9213-71fb358d0811" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
