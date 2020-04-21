@@ -33,19 +33,27 @@ public class Mob : CharactereBaseStats
     protected void GenerateMob(int idMob)
     {
         MobBdd mobBdd = new MobBdd();
-        List<string> mob = new List<string>(mobBdd.FindByName(idMob));
-        Name = mob[0];
-        Description = mob[1];
-        ActionPoints.Value = Int32.Parse(mob[2]);
-        CriticalRates.Value = Int32.Parse(mob[3]);
-        Heal.Value = Int32.Parse(mob[4]);
-        MagicalDamages.Value = Int32.Parse(mob[5]);
-        MagicalPenetrations.Value = Int32.Parse(mob[6]);
-        MagicalResistances.Value = Int32.Parse(mob[7]);
-        PhysicalDamages.Value = Int32.Parse(mob[8]);
-        PhysicalPenetrations.Value = Int32.Parse(mob[9]);
-        PhysicalResistances.Value = Int32.Parse(mob[10]);
-        Speed.Value = Int32.Parse(mob[11]);
+        List<string> mob = new List<string>(mobBdd.FindById(idMob));
+        try
+        {
+        Name = mob[1];
+        Description = mob[2];
+        ActionPoints.Value = Int32.Parse(mob[3]);
+        CriticalRates.Value = Int32.Parse(mob[4]);
+        Heal.Value = Int32.Parse(mob[5]);
+        MagicalDamages.Value = Int32.Parse(mob[6]);
+        MagicalPenetrations.Value = Int32.Parse(mob[7]);
+        MagicalResistances.Value = Int32.Parse(mob[8]);
+        PhysicalDamages.Value = Int32.Parse(mob[9]);
+        PhysicalPenetrations.Value = Int32.Parse(mob[10]);
+        PhysicalResistances.Value = Int32.Parse(mob[11]);
+        Speed.Value = Int32.Parse(mob[12]);
+        }
+        catch (Exception)
+        {
+            Debug.Log("Error Parse Id Mob = " + mob[0]);
+        }
+        
     }
 
 }

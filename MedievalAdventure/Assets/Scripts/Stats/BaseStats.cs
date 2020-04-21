@@ -46,7 +46,6 @@ public class BaseStats : MonoBehaviour
 
         //recuperation de toute les stats dans la bdd
         allStats = statsBdd.AllStats();
-
         //Insertion des donnees de la bdd dans les differentes stats
         this.ActionPoints = this.allStats[0];
         this.CriticalRates = this.allStats[1];

@@ -5,6 +5,7 @@
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
+using UnityEngine;
 
 public class StatsBdd : Bdd
 {
@@ -48,7 +49,7 @@ public class StatsBdd : Bdd
         {
             // Ouverture de la connexion SQL
             this.connection.Open();
-
+      
             // Création d'une commande SQL en fonction de l'objet connection
             MySqlCommand cmd = this.connection.CreateCommand();
 

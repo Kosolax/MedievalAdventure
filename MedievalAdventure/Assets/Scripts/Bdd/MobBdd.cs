@@ -51,7 +51,7 @@ public class MobBdd : Bdd
         }
     }
 
-    public List<String> FindByName(int idMob)
+    public List<String> FindById(int idMob)
     {
         try
         {
@@ -70,18 +70,10 @@ public class MobBdd : Bdd
             List<string> mob = new List<string>();
             while (reader.Read())
             {
-                mob.Add(String.Format("{0}", reader[1]));
-                mob.Add(String.Format("{0}", reader[2]));
-                mob.Add(String.Format("{0}", reader[3]));
-                mob.Add(String.Format("{0}", reader[4]));
-                mob.Add(String.Format("{0}", reader[5]));
-                mob.Add(String.Format("{0}", reader[6]));
-                mob.Add(String.Format("{0}", reader[7]));
-                mob.Add(String.Format("{0}", reader[8]));
-                mob.Add(String.Format("{0}", reader[9]));
-                mob.Add(String.Format("{0}", reader[10]));
-                mob.Add(String.Format("{0}", reader[11]));
-                mob.Add(String.Format("{0}", reader[12]));
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    mob.Add(String.Format("{0}", reader[i]));
+                }
             }
 
             this.connection.Close();

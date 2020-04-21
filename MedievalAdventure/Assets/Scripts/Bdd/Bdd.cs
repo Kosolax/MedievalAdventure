@@ -19,7 +19,7 @@ public class Bdd : MonoBehaviour
     private void InitConnexion()
     {
         // Création de la chaîne de connexion
-        string connectionString = "SERVER=127.0.0.1; DATABASE=banquedb; UID=root; PASSWORD=";
+        string connectionString = "SERVER=127.0.0.1; DATABASE=banquedb; UID=root; PASSWORD=;";
         this.connection = new MySqlConnection(connectionString);
     }
 }
