@@ -11,8 +11,6 @@ public class Salle : MonoBehaviour
     void Start()
     {
         mobs = GetComponentsInChildren<Mob>();
-        Debug.Log(mobs.Length);
-
     }
 
     // Update is called once per frame
@@ -25,11 +23,8 @@ public class Salle : MonoBehaviour
     public void UpdateMobs(int nb)
     {
         Player player = GUIElement.FindObjectOfType<Player>();
-        Debug.Log("UpdateMobs");
-
         if (nb == 0)
         {
-            Debug.Log("fin");
             player.items.AddRange(itemsMap);
         }
     }

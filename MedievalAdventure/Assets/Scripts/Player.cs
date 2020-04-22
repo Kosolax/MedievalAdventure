@@ -29,7 +29,6 @@ public class Player : MonoBehaviour
         Vector3 l_direction = new Vector3(l_horizontalInput, 0, l_verticalInput);
         Vector3 l_velocity = l_direction * m_speed;
         m_characterController.Move(l_velocity * Time.deltaTime);
-
     }
 
    

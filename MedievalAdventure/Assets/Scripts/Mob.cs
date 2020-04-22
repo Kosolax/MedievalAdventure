@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class Mob : MonoBehaviour
 {
     protected string mobName;
@@ -19,18 +17,10 @@ public class Mob : MonoBehaviour
     void Start()
     {
         salle = GetComponentInParent<Salle>();
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void DieBy()
     {
-      
         //ajoute items player
         for (int i = 0; i < this.items.Count; i++)
         {
@@ -45,23 +35,17 @@ public class Mob : MonoBehaviour
         }
 
         // Implémantation du gain xp 
-        Destroy(this.gameObject, 0f);
-        Debug.Log("--------- NEXT MOB ----------");
-        
+        Destroy(this.gameObject, 0f);        
     }
-
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.name == "Player")
         {
-
             Mob[] mobs = salle.GetComponentsInChildren<Mob>();
             this.DieBy();
             salle.UpdateMobs(mobs.Length - 1);
-
-        }
-        
+        } 
     }
 }
 
