@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/NuGet/Medieval.unity
+    guid: a4f833cec76052448b8d0b770faf143b
+  - enabled: 1
+    path: Assets/MenuPause.unity
+    guid: 4210d8c0009814258a0739e7f8338ef4
   m_configObjects: {}
