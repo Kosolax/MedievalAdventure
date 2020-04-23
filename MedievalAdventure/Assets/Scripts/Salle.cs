@@ -1,23 +1,20 @@
-﻿using System.Collections;
+﻿/* -------------------------------------------------------------- */
+/* -----------All rights reserved to Medieval Adventure---------- */
+/* -------------------------------------------------------------- */
+
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Salle : MonoBehaviour
 {
     public List<Item> itemsMap = new List<Item>();
+
     public Component[] mobs;
-    
+
     // Start is called before the first frame update
-    void Start()
+    internal void Start()
     {
         mobs = GetComponentsInChildren<Mob>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
     }
 
     public void UpdateMobs(int nb)

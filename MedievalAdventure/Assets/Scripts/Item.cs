@@ -1,5 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/* -------------------------------------------------------------- */
+/* -----------All rights reserved to Medieval Adventure---------- */
+/* -------------------------------------------------------------- */
+
 using UnityEngine;
 
 public class Item : MonoBehaviour

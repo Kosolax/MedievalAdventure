@@ -1,14 +1,18 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿/* -------------------------------------------------------------- */
+/* -----------All rights reserved to Medieval Adventure---------- */
+/* -------------------------------------------------------------- */
+
 using System;
+using UnityEngine;
 
 [Serializable]
 public class ItemsList
 {
     public Item item;
-    [Range(0, 100)] public float taux ;
-    public Rarete rarete ; 
-    
+
+    [Range(0, 100)] public float taux;
+
+    public Rarete rarete;
 
     public Item GetItem()
     {
@@ -24,17 +28,17 @@ public class ItemsList
     {
         float chance = UnityEngine.Random.Range(0, 100);
 
-        if(chance <= this.GetTaux())
+        if (chance <= this.GetTaux())
         {
             return true;
-        } 
-        return false;       
+        }
+        return false;
     }
 
     public int RandomStack()
     {
         float chance = UnityEngine.Random.Range(0, 100);
-        switch(rarete)
+        switch (rarete)
         {
             case Rarete.commun:
 
@@ -54,7 +58,7 @@ public class ItemsList
                 {
                     return 1;
                 }
-                
+
             case Rarete.rare:
 
                 if (chance <= 10)
@@ -65,9 +69,9 @@ public class ItemsList
                 {
                     return 1;
                 }
-               
+
             default:
                 return 1;
-        }  
+        }
     }
 }

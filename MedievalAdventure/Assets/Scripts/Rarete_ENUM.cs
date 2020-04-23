@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/* -------------------------------------------------------------- */
+/* -----------All rights reserved to Medieval Adventure---------- */
+/* -------------------------------------------------------------- */
 
 public enum Rarete : int
 {
